@@ -9,7 +9,7 @@
 .bg-white{background-color: white;}
 
 header{
-    padding: 0rem 0rem 0rem 1rem;
+    padding: 0.25rem 0.25rem 0rem 1rem;
 }
 
 #logo{
@@ -28,16 +28,23 @@ main{
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
+    font-family: Montserrat;
 }
 
 h3.category{
-    font-size: 0.5rem;
-    color: #D3BEB4;
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 0.75rem;
+    color: #A0A2A3;
+    margin: 1rem 0rem 0.5rem 0rem;
 }
 
 h2.title{
-    font-size: 1rem;
+    font-family: Helvetica;
+    font-size: 1.25rem;
+    font-weight: 700;
     color: #473163;
+    margin-bottom: 1rem;
 }
 
 .container-video{
@@ -54,8 +61,9 @@ section.summary{
 }
 
 .container-video li{
+    font-size: 0.75rem;
     list-style: none;
-    margin: 0.5rem 0rem 0.5rem 0rem;
+    margin: 0rem 0rem 0.75rem 0rem;
 }
 
 
