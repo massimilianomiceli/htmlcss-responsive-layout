@@ -31,7 +31,7 @@ main{
     font-family: Montserrat;
 }
 
-h3.category{
+h4.category{
     font-family: Helvetica;
     font-weight: lighter;
     font-size: 0.75rem;
@@ -47,6 +47,10 @@ h2.title{
     margin-bottom: 1rem;
 }
 
+h2.title > span{
+    display: none;
+}
+
 .container-video{
     display: flex;
     flex-direction: column;
@@ -60,11 +64,65 @@ section.summary{
     margin-bottom: 1.5rem;
 }
 
+li{list-style: none;}
+
 .container-video li{
     font-size: 0.75rem;
-    list-style: none;
     margin: 0rem 0rem 0.75rem 0rem;
 }
 
+nav.social{
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.container-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-social  li{
+    display: inline-block;
+}
+
+.social-button{
+    display: inline-block;
+    height: 2rem;
+    border-radius: 13px;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    background-color: white;
+    box-shadow: 5px 5px 2.5px #dedede;
+}
+
+.social-image{
+    /* object-fit: cover; */
+    height: 100%;
+}
 
 
+.container-presentation img{
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    margin-bottom: 0.5rem;
+}
+
+.container-presentation h3{
+    font-family: sans-serif ;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.container-presentation hr{
+    background-color: #F78C17;
+    display: inline-block;
+    height: 0.15rem;
+    width: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.container-presentation p{
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+}
