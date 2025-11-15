@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 0rem 0rem 0rem 1rem;
+}
+
+#logo{
+    font-family: "Nerko One", cursive;
+    font-size: 2rem;
+    color: #FF9512;
+}
