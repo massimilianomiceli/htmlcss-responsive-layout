@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.f-bold{font-weight: bold;}
+
+.bg-white{background-color: white;}
+
 header{
     padding: 0rem 0rem 0rem 1rem;
 }
@@ -12,4 +16,47 @@ header{
     font-family: "Nerko One", cursive;
     font-size: 2rem;
     color: #FF9512;
+    text-align: center;
 }
+
+main{
+    background-color: #F6F5F3;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h3.category{
+    font-size: 0.5rem;
+    color: #D3BEB4;
+}
+
+h2.title{
+    font-size: 1rem;
+    color: #473163;
+}
+
+.container-video{
+    display: flex;
+    flex-direction: column;
+}
+
+section.summary{
+    padding: 1.5rem 0rem 1rem 2rem;
+}
+
+.summary h3{
+    margin-bottom: 1.5rem;
+}
+
+.container-video li{
+    list-style: none;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+
+
