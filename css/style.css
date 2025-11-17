@@ -70,7 +70,9 @@ div.video{
 div.video img.video-preview{
     object-fit: cover;
     width: 100%;
-    height: 16rem;
+    /* height: 16rem; */
+    min-height: 16rem;
+    max-height: 20rem;
 }
 
 .video-description{
@@ -145,7 +147,7 @@ div.video-caption{
 }
 
 section.summary{
-    padding: 1.6rem 0rem 1rem 2rem;
+    padding: 1.6rem 2rem 1rem 2rem;
 }
 
 nav.social{
@@ -172,22 +174,29 @@ nav.social{
     height: 100%;
 }
 
+.banner{
+    display: none;
+}
+
 .container-presentation h3{
     font-family: sans-serif;
     font-size: 1.8rem;
     font-weight: 100;
+    margin-bottom: 0.5rem;
 }
 
 .container-presentation hr{
     background-color: #F78C17;
-    display: inline-block;
+    display: block;
     height: 0.15rem;
-    width: 4rem;
+    width: 5rem;
+    margin-bottom: 1.5rem;
 }
 
 .container-presentation img{
     display: block;
-    margin: 0.5rem auto;
+    margin: 0rem auto;
+    margin-bottom: 1.5rem;
     width: 65%;
 }
 
@@ -230,7 +239,49 @@ footer{
     color: white;
 }
 
+@media screen and (min-width: 768px) {
+    section.summary ul{
+        display: flex;
+      
+        flex-wrap: wrap;
+    }
 
+    section.summary li{
+        width: calc(100% / 3);
+        margin: 0rem 0rem 1.5rem 0rem;
+    }
+
+    .banner{
+        display: inline;
+        margin-bottom: 2rem;
+    }
+
+    .container-social  ul{
+        justify-content: space-between;
+    }
+
+    .container-social  li{
+        width: calc(100% / 6);
+    }
+
+    .social-button{
+        text-align: center;
+        width: 100%;
+    }
+
+    
+
+    .container-presentation img{
+    float: inline-start;
+    margin: 0rem 0.5rem 0.5rem 0rem;
+    width: 65%;
+    }
+
+    .container-presentation p{
+        display: inline;
+    }
+
+}
 
 
 
