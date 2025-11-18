@@ -70,9 +70,10 @@ div.video{
 div.video img.video-preview{
     object-fit: cover;
     width: 100%;
+    height: auto;
     /* height: 16rem; */
-    min-height: 16rem;
-    max-height: 20rem;
+    /* min-height: 16rem;
+    max-height: 20rem; */
 }
 
 .video-description{
@@ -154,12 +155,17 @@ nav.social{
     margin: 2rem 0rem 2rem 0rem;
 }
 
+nav.social > ul > li span{
+    display: none;
+}
+
 .container-social  li{
     display: inline-block;
 }
 
 .container-social{
     justify-content: space-between;
+    text-align: center;
 }
 
 .social-button{
@@ -240,9 +246,17 @@ footer{
 }
 
 @media screen and (min-width: 768px) {
+    
+    #logo{
+        text-align: left;
+    }
+    
+    h2.title > span{
+        display: inline-block;
+    }
+
     section.summary ul{
         display: flex;
-      
         flex-wrap: wrap;
     }
 
@@ -283,8 +297,51 @@ footer{
 
 }
 
+@media screen and (min-width: 992px) {
 
+    .container-video{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 
+    section.summary{
+        flex-basis: 30%;
+    }
+
+    div.video{
+        flex-basis: 70%;
+    }
+
+    section.summary ul{
+        display: inline-block;
+    }
+
+    section.summary li{
+        width: auto;
+    }
+
+    nav.social > ul > li span{
+        display: inline-block;
+        margin-left: 0.5REM;
+        font-weight: bold;
+        color: black;
+    }
+
+    .container-footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-footer p{
+        text-align: left;
+    }
+
+    .container-footer address{
+        margin-bottom: 0;
+    }
+
+}
 
 
 
